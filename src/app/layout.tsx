@@ -17,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-
+      <head>
+       <link href="/font/SUIT-woff2/SUIT.css" 
+       rel="stylesheet" />
+      </head>
       <body>
         
         {children}
