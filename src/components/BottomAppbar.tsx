@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../styles/components/bottomcomponent.module.css";
 import { useState } from "react";
 export default function BottomAppbar() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isActive, setIsActive] = useState('home');
   return (
     <aside className={`${styles["bottom-app-bar"]}`}>
