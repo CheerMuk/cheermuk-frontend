@@ -64,7 +64,7 @@ export default function SearchComponent() {
     </div>
   );
 }
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 interface FilterModalProps {
   isActive: boolean;
   closeModal: () => void;
