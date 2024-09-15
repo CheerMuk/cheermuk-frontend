@@ -1,7 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from '../styles/home/homePage.module.css';
 import 'swiper/css';
+import styles from '../styles/home/homePage.module.css';
 
 export default function HomeSwiper() {
   return (

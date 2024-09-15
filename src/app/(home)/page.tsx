@@ -65,7 +65,7 @@ export default function HomePage() {
                   이지역맛잘알
                 </div>
               </div>
-              
+              <HomeSwiper />
               <div className={`${styles["text-box"]}`}>
                 <p className={`${styles['text']}`}>용산에 있는 유명한 맛집 말고 제가 20년 다닌 찐 로컬 맛집 추천드려요. 라자냐랑 뇨끼는 꼭 드셔야됩니다.</p>
                 <div className={`${styles['time']}`}>12시간 전</div>
@@ -100,7 +100,7 @@ export default function HomePage() {
                   이지역맛잘알
                 </div>
               </div>
-              
+              <HomeSwiper />
               <div className={`${styles["text-box"]}`}>
                 <p className={`${styles['text']}`}>용산에 있는 유명한 맛집 말고 제가 20년 다닌 찐 로컬 맛집 추천드려요. 라자냐랑 뇨끼는 꼭 드셔야됩니다.</p>
                 <div className={`${styles['time']}`}>12시간 전</div>
