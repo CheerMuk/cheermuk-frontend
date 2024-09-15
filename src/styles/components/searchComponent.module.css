@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sort-box {
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+.filter-box {
+  padding: 7px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d3d8;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+.small-img {
+  width: 18px;
+  object-fit: contain;
+}

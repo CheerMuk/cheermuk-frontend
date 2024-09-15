@@ -1,0 +1,43 @@
+.bottom-app-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 393px;
+  height: 68px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform : translateX(-50%);
+  z-index: 999;
+  
+}
+.inner {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.icon-box {
+  
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.icon-box > a  {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  
+}
+.active > a {
+  color: #CF3426;
+}
+.icon-box > a:hover {
+  text-decoration: none;
+}
