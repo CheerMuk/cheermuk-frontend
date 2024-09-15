@@ -1,3 +1,6 @@
+.container {
+  margin-bottom: 8px;
+}
 .inner {
   width: 100%;
   display: flex;

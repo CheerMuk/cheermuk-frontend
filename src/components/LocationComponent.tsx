@@ -1,3 +1,4 @@
+"use client";
 import useGeolocation from "@/hook/geolocation"
 import styles from "../styles/components/locationComponent.module.css";
 
@@ -5,7 +6,7 @@ export default function LocationComponent() {
   const location = useGeolocation();
 
   return (
-    <div>
+    <div className={`${styles.container}`}>
       <div className={`${styles.inner}`}>
         <img src="/img/icon/location.png" alt="위치 아이콘" />
         <span>지역선택</span>

@@ -1,12 +1,10 @@
-"use client";
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
 import styles from '../../styles/home/homePage.module.css';
 import LocationComponent from '@/components/LocationComponent';
 import SearchComponent from '@/components/SearchComponent';
 import LineComponent from '@/components/LineComponent';
 import BottomAppbar from '@/components/BottomAppbar';
+import HomeSwiper from '@/components/HomeSwiper';
 
 
 export default function HomePage() {
@@ -32,28 +30,7 @@ export default function HomePage() {
                   이지역맛잘알
                 </div>
               </div>
-              <Swiper
-                className={`${styles["swiper"]}`}
-                slidesPerView={'auto'}
-                spaceBetween={8}
-              >
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/1.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/2.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/3.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/4.jpg" alt="test" />
-                </SwiperSlide>
-              </Swiper>
+              <HomeSwiper />
               <div className={`${styles["text-box"]}`}>
                 <p className={`${styles['text']}`}>용산에 있는 유명한 맛집 말고 제가 20년 다닌 찐 로컬 맛집 추천드려요. 라자냐랑 뇨끼는 꼭 드셔야됩니다.</p>
                 <div className={`${styles['time']}`}>12시간 전</div>
@@ -88,28 +65,7 @@ export default function HomePage() {
                   이지역맛잘알
                 </div>
               </div>
-              <Swiper
-                className={`${styles["swiper"]}`}
-                slidesPerView={'auto'}
-                spaceBetween={8}
-              >
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/1.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/2.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/3.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/4.jpg" alt="test" />
-                </SwiperSlide>
-              </Swiper>
+              
               <div className={`${styles["text-box"]}`}>
                 <p className={`${styles['text']}`}>용산에 있는 유명한 맛집 말고 제가 20년 다닌 찐 로컬 맛집 추천드려요. 라자냐랑 뇨끼는 꼭 드셔야됩니다.</p>
                 <div className={`${styles['time']}`}>12시간 전</div>
@@ -144,28 +100,7 @@ export default function HomePage() {
                   이지역맛잘알
                 </div>
               </div>
-              <Swiper
-                className={`${styles["swiper"]}`}
-                slidesPerView={'auto'}
-                spaceBetween={8}
-              >
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/1.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/2.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/3.jpg" alt="test" />
-                </SwiperSlide>
-                <SwiperSlide
-                  className={`${styles['swiper-slide']}`}>
-                  <img src="/img/home/4.jpg" alt="test" />
-                </SwiperSlide>
-              </Swiper>
+              
               <div className={`${styles["text-box"]}`}>
                 <p className={`${styles['text']}`}>용산에 있는 유명한 맛집 말고 제가 20년 다닌 찐 로컬 맛집 추천드려요. 라자냐랑 뇨끼는 꼭 드셔야됩니다.</p>
                 <div className={`${styles['time']}`}>12시간 전</div>
