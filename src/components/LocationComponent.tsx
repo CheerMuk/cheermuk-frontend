@@ -3,6 +3,7 @@ import useGeolocation from "@/hook/geolocation"
 import styles from "../styles/components/locationComponent.module.css";
 
 export default function LocationComponent() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const location = useGeolocation();
 
   return (

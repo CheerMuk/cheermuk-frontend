@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "../styles/components/searchComponent.module.css";
+import Image from "next/image";
 
 export default function SearchComponent() {
   const [modalActive, setmodalActive] = useState<boolean>(false)
@@ -9,6 +10,7 @@ export default function SearchComponent() {
   const closeModal = () => {
     setmodalActive(false)
   }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const setFilter = (e:any , str:string) => {
     e.stopPropagation(); 
     setisActive(str);
@@ -17,22 +19,52 @@ export default function SearchComponent() {
   return (
     <div className={`${styles['container']}`}>
       <div className={`${styles["sort-box"]}`} onClick={() => setmodalActive(true)}>
-        <img src="/img/icon/listup.svg" alt="리스트 아이콘" />
+        <Image
+        src="/img/icon/listup.svg" 
+        alt="리스트 아이콘"
+        width={24}
+        height={24}
+        style={{
+          objectFit :"contain",
+
+        }}
+        
+        /> 
+        
         <span>{isActive}</span>
-        <img className={`${styles["small-img"]}`} src="/img/icon/down_arrow.png" alt="아래 화살표" />
+        <Image 
+        className={`${styles["small-img"]}`} 
+        src="/img/icon/down_arrow.png" 
+        alt="아래 화살표" 
+        width={20}
+        height={20}
+        />
         <FilterModal isActive={modalActive} closeModal={closeModal} setFilter={setFilter}/>
       </div>
       <div className={`${styles["filter-box"]}`}>
         <span>거리 반경</span>
-        <img className={`${styles["small-img"]}`} src="/img/icon/down_arrow.png" alt="아래 화살표" />
+        <Image 
+        className={`${styles["small-img"]}`} 
+        src="/img/icon/down_arrow.png" 
+        alt="아래 화살표" 
+        width={20}
+        height={20}
+        />
       </div>
       <div className={`${styles["filter-box"]}`}>
         <span>음식 종류</span>
-        <img className={`${styles["small-img"]}`} src="/img/icon/down_arrow.png" alt="아래 화살표" />
+        <Image 
+        className={`${styles["small-img"]}`} 
+        src="/img/icon/down_arrow.png" 
+        alt="아래 화살표" 
+        width={20}
+        height={20}
+        />
       </div>
     </div>
   );
 }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface FilterModalProps {
   isActive: boolean;
   closeModal: () => void;
