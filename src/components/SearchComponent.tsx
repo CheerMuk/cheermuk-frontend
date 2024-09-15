@@ -10,8 +10,8 @@ export default function SearchComponent() {
   const closeModal = () => {
     setmodalActive(false)
   }
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const setFilter = (e:any , str:string) => {
+
+  const setFilter = (e: React.MouseEvent<HTMLLIElement> , str:string) => {
     e.stopPropagation(); 
     setisActive(str);
     setmodalActive(false)
@@ -68,7 +68,7 @@ export default function SearchComponent() {
 interface FilterModalProps {
   isActive: boolean;
   closeModal: () => void;
-  setFilter: (e:any ,str:string) => void;
+  setFilter: (e: React.MouseEvent<HTMLLIElement> ,str:string) => void;
 }
 
 function FilterModal({ isActive, closeModal, setFilter }: FilterModalProps) {
