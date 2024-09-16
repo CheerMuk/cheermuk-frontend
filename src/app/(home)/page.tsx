@@ -1,4 +1,3 @@
-
 import styles from '../../styles/home/homePage.module.css';
 import LocationComponent from '@/components/LocationComponent';
 import SearchComponent from '@/components/SearchComponent';

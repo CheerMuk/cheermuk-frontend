@@ -27,9 +27,9 @@ export default function BottomAppbar() {
           </Link>
         </li>
         <li className={`${styles["icon-box"]}`}>
-          <Link href={'/'}>
-            <img src="/img/icon/foke.svg" alt="마이페이지아이콘" />
-            <span>마이페이지</span>
+          <Link href={'/members/login'}>
+            <img src="/img/icon/people.svg" alt="마이페이지아이콘" />
+            <span>로그인</span>
           </Link>
         </li>
       </ul>

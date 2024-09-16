@@ -6,7 +6,8 @@ export default function LineComponent() {
       overflow: "hidden",
       width: "100vw",
       height: '1px',
-      background: '#EAEBEE'
+      background: '#EAEBEE',
+      flexShrink: 0,
     }}>
     </div>
   );
