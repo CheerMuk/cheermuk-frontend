@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import styles from '../styles/home/homePage.module.css';
+import Image from 'next/image';
 
 export default function HomeSwiper() {
   return (
@@ -12,19 +13,19 @@ export default function HomeSwiper() {
     >
       <SwiperSlide
         className={`${styles['swiper-slide']}`}>
-        <img src="/img/home/1.jpg" alt="test" />
+        <Image width={184} height={184} src="/img/home/1.jpg" alt="test" />
       </SwiperSlide>
       <SwiperSlide
         className={`${styles['swiper-slide']}`}>
-        <img src="/img/home/2.jpg" alt="test" />
+        <Image width={184} height={184} src="/img/home/2.jpg" alt="test" />
       </SwiperSlide>
       <SwiperSlide
         className={`${styles['swiper-slide']}`}>
-        <img src="/img/home/3.jpg" alt="test" />
+        <Image width={184} height={184} src="/img/home/3.jpg" alt="test" />
       </SwiperSlide>
       <SwiperSlide
         className={`${styles['swiper-slide']}`}>
-        <img src="/img/home/4.jpg" alt="test" />
+        <Image width={184} height={184} src="/img/home/4.jpg" alt="test" />
       </SwiperSlide>
     </Swiper>
   );

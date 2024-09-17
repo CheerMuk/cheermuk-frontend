@@ -1,24 +1,24 @@
 'use client';
-import useGeolocation, { locationType } from "@/hook/geolocation"
+// import useGeolocation, { locationType } from "@/hook/geolocation"
 import styles from "../styles/components/locationComponent.module.css";
 import Image from "next/image";
-import { getMyLocation } from "@/hook/kakaomaps";
-import { useEffect, useState } from "react";
+// import { getMyLocation } from "@/hook/kakaomaps";
+import {useState } from "react";
 import { regions } from "../../public/data/district.json"
 
 
 // 전역 변수로 선언 (초기 값은 null)
-export let geocoder: kakao.maps.services.Geocoder | null = null;
+export const geocoder: kakao.maps.services.Geocoder | null = null;
 
 export default function LocationComponent() {
-  const [modalShow, setmodalShow] = useState<Boolean>(false)
+  const [modalShow, setmodalShow] = useState<boolean>(false)
 
   const showModal = () => {
-    console.log('show')
+    // console.log('show')
     setmodalShow(true)
   }
   const closeModal = () => {
-    console.log('hide')
+    // console.log('hide')
     setmodalShow(false)
   }
 
@@ -26,7 +26,7 @@ export default function LocationComponent() {
     <>
       <div className={`${styles.container}`}>
         <div className={`${styles.inner}`} onClick={showModal}>
-          <img src="/img/icon/location.png" alt="위치 아이콘" />
+          <Image width={24} height={24} src="/img/icon/location.png" alt="위치 아이콘" />
           <span>지역선택</span>
           <div className={`${styles["down-arrow-wrap"]}`}>
             <Image
@@ -39,24 +39,24 @@ export default function LocationComponent() {
 
         </div>
       </div>
-      {<LocaitionModal show={modalShow} close={closeModal}/>}
+      {<LocaitionModal show={modalShow} close={closeModal} />}
     </>
   )
 }
 
-interface Region {
-  name: string;
-  districts: {
-    name: string;
-    subdistricts: string[];
-  }[];
-}
+// interface Region {
+//   name: string;
+//   districts: {
+//     name: string;
+//     subdistricts: string[];
+//   }[];
+// }
 
-function LocaitionModal({show, close} : {
-  show:Boolean,
+function LocaitionModal({ show, close }: {
+  show: boolean,
   close: () => void
 }) {
-  const location = useGeolocation();
+  // const location = useGeolocation();
   // const [myLocat, setmyLocat] = useState({
   //   x: "0",
   //   y: "0"
@@ -85,12 +85,12 @@ function LocaitionModal({show, close} : {
           <h4 className={styles["modal-title"]}>최근 설정 지역</h4>
           <div className={`${styles["mylocation-wrap"]}`}>
             <button>
-              <img src="/img/icon/mylocation.svg" alt="내위치설정아이콘" />
+              <Image width={24} height={24} src="/img/icon/mylocation.svg" alt="내위치설정아이콘" />
             </button>
             <span>현재위치로 설정</span>
           </div>
           <button className={`${styles["close-btn"]}`} onClick={close}>
-            <img src="/img/icon/cancel.svg" alt="닫기버튼" />
+            <Image width={24} height={24} src="/img/icon/cancel.svg" alt="닫기버튼" />
           </button>
         </div>
         <div className={`${styles["regions-list"]}`}>
