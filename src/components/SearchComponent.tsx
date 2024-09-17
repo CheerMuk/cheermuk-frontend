@@ -112,7 +112,7 @@ function CategoryModal({isActive, closeModal}: CategoryModalProps) {
   const [selectStreet, setselectStreet] = useState<string[]>([])
   const [selectFood, setselectFood] = useState<string[]>([])
 
-  console.log('catemodal', isActive);
+  // console.log('catemodal', isActive);
 
   const streetAdd = (e: React.MouseEvent<HTMLButtonElement> ,str: string) => {
     e.stopPropagation();
