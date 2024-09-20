@@ -4,7 +4,7 @@ import styles from "../styles/components/locationComponent.module.css";
 import Image from "next/image";
 // import { getMyLocation } from "@/hook/kakaomaps";
 import {useState } from "react";
-import { regions } from "../../public/data/district.json"
+import district from "../data/district.json"
 
 
 // 전역 변수로 선언 (초기 값은 null)
@@ -56,6 +56,7 @@ function LocaitionModal({ show, close }: {
   show: boolean,
   close: () => void
 }) {
+  const {regions} = district
   // const location = useGeolocation();
   // const [myLocat, setmyLocat] = useState({
   //   x: "0",

@@ -4,6 +4,7 @@ import SearchComponent from '@/components/SearchComponent';
 import LineComponent from '@/components/LineComponent';
 import BottomAppbar from '@/components/BottomAppbar';
 import HomeSwiper from '@/components/HomeSwiper';
+import Image from 'next/image';
 
 
 export default function HomePage() {
@@ -25,7 +26,7 @@ export default function HomePage() {
                   <span className={`${styles["address"]}`}>서울 용산구 한강로동</span>
                 </div>
                 <div className={`${styles["name"]}`}>
-                  <img src="/img/home/profile_test.png" alt="test" />
+                  <Image width={24} height={24} src="/img/home/profile_test.png" alt="test" />
                   이지역맛잘알
                 </div>
               </div>
@@ -36,15 +37,15 @@ export default function HomePage() {
               </div>
               <div className={`${styles['icon-box']}`}>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Heart_01.svg" alt="찜 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Heart_01.svg" alt="찜 아이콘" />
                   768
                 </div>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Chat.svg" alt="댓글 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Chat.svg" alt="댓글 아이콘" />
                   123
                 </div>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Bookmark.svg" alt="북마크 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Bookmark.svg" alt="북마크 아이콘" />
                   524
                 </div>
               </div>
@@ -60,7 +61,7 @@ export default function HomePage() {
                   <span className={`${styles["address"]}`}>서울 용산구 한강로동</span>
                 </div>
                 <div className={`${styles["name"]}`}>
-                  <img src="/img/home/profile_test.png" alt="test" />
+                  <Image width={24} height={24} src="/img/home/profile_test.png" alt="test" />
                   이지역맛잘알
                 </div>
               </div>
@@ -71,15 +72,15 @@ export default function HomePage() {
               </div>
               <div className={`${styles['icon-box']}`}>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Heart_01.svg" alt="찜 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Heart_01.svg" alt="찜 아이콘" />
                   768
                 </div>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Chat.svg" alt="댓글 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Chat.svg" alt="댓글 아이콘" />
                   123
                 </div>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Bookmark.svg" alt="북마크 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Bookmark.svg" alt="북마크 아이콘" />
                   524
                 </div>
               </div>
@@ -95,7 +96,7 @@ export default function HomePage() {
                   <span className={`${styles["address"]}`}>서울 용산구 한강로동</span>
                 </div>
                 <div className={`${styles["name"]}`}>
-                  <img src="/img/home/profile_test.png" alt="test" />
+                <Image width={24} height={24} src="/img/home/profile_test.png" alt="test" />
                   이지역맛잘알
                 </div>
               </div>
@@ -105,16 +106,16 @@ export default function HomePage() {
                 <div className={`${styles['time']}`}>12시간 전</div>
               </div>
               <div className={`${styles['icon-box']}`}>
-                <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Heart_01.svg" alt="찜 아이콘" />
+              <div className={`${styles['icon']}`}>
+                  <Image width={24} height={24} src="/img/home/Heart_01.svg" alt="찜 아이콘" />
                   768
                 </div>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Chat.svg" alt="댓글 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Chat.svg" alt="댓글 아이콘" />
                   123
                 </div>
                 <div className={`${styles['icon']}`}>
-                  <img src="/img/home/Bookmark.svg" alt="북마크 아이콘" />
+                  <Image width={24} height={24} src="/img/home/Bookmark.svg" alt="북마크 아이콘" />
                   524
                 </div>
               </div>

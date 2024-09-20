@@ -1,0 +1,133 @@
+.container {
+  position: relative;
+  width: 393px;
+  min-height: 100vh;
+  padding: 0px 16px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.shop-box {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.shop-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.shop-title > span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #adb1ba;
+}
+.icon-box {
+  display: flex;
+  gap: 8px;
+}
+
+.profile-box {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile {
+  font-size: 13px;
+  line-height: 22px;
+  color: #212124;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+.profile-time {
+  font-size: 11px;
+  line-height: 12px;
+  color: #adb1ba;
+}
+.content {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212124;
+}
+.rating-box-wrap {
+  margin-bottom: 40px;
+}
+.rating-box-title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+
+}
+
+.rating-content {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating-content-title {
+  width: 48px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.rating-content-star {
+  display: flex;
+  gap: 4px;
+}
+
+.external-links {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.info-item-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

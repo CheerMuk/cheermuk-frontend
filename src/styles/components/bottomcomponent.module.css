@@ -35,6 +35,10 @@
   gap: 6px;
   
 }
+.icon-box > a > img {
+  box-sizing: content-box;
+  padding: 0 12px;
+}
 .active > a {
   color: #CF3426;
 }

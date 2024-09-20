@@ -23,7 +23,7 @@ export default function BottomAppbar() {
         </li>
         <li className={`${styles["icon-box"]}`}>
           <Link href={'/'}>
-            <Image width={24} height={24} src="/img/icon/foke.svg" alt="검색아이콘" />
+            <Image width={24} height={24} src="/img/icon/search.svg" alt="검색아이콘" />
             <span>검색</span>
           </Link>
         </li>

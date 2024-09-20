@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0;
+  background-color: #fff;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-menu {
+  display: none;
+}
