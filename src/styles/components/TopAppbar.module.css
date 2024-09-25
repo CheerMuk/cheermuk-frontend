@@ -101,4 +101,30 @@
   align-items: center;
   gap: 8px;
 }
+.report-modal-form-label:last-of-type {
+  margin-bottom: 24px;
+}
+.report-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.report-btn {
+  width: 86px;
+  padding: 9px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 6px;
+  border: none;
+}
+.report-btn.cancle {
+  background-color: #DCDEE3;
+  color: #868B94;
+}
+.report-btn.success {
+  background-color: #EAEBEE;
+  color : #ADB1BA;
+}
 /*ReportModal CSS : E*/

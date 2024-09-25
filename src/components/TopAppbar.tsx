@@ -8,7 +8,7 @@ function goback() {
 }
 
 export default function TopAppbar() {
-  const [reportReady, setReportReady] = useState(false)
+  const [reportReady, setReportReady] = useState<boolean>(false)
 
   return (
     <div className={`${styles['container']}`}>
@@ -52,11 +52,17 @@ export default function TopAppbar() {
   );
 }
 
-
+interface reportFormType {
+  report : string
+}
 
 function ReportModal({ isShow }: {
   isShow: boolean
 }) {
+
+  const [reportFormData, setReportFormData] = useState<reportFormType>({
+    "report": ""
+  })
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -65,6 +71,13 @@ function ReportModal({ isShow }: {
 
 
     // console.dir(formData.values());
+  }
+  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const target = e.target
+    setReportFormData({
+      ...reportFormData,
+      report : target.value
+    })
   }
 
   return <div
@@ -78,28 +91,28 @@ function ReportModal({ isShow }: {
         <h2 className={styles['report-modal-title']}>게시물을 신고하시겠습니까?</h2>
         <p className={styles['report-modal-form-info']}>신고사유</p>
         <label className={styles['report-modal-form-label']}>
-          <input type="radio" name="report" value={'욕설'} />
+          <input type="radio" name="report" value={'욕설'} onChange={onChange} />
           욕설
         </label>
         <label className={styles['report-modal-form-label']}>
-          <input type="radio" name="report" value={'개인정보 노출'} />
+          <input type="radio" name="report" value={'개인정보 노출'} onChange={onChange} />
           개인정보 노출
         </label>
         <label className={styles['report-modal-form-label']}>
-          <input type="radio" name="report" value={'불법 정보'} />
+          <input type="radio" name="report" value={'불법 정보'} onChange={onChange} />
           불법 정보
         </label>
         <label className={styles['report-modal-form-label']}>
-          <input type="radio" name="report" value={'청소년에게 유해한 내용'} />
+          <input type="radio" name="report" value={'청소년에게 유해한 내용'} onChange={onChange} />
           청소년에게 유해한 내용
         </label>
         <label className={styles['report-modal-form-label']}>
-          <input type="radio" name="report" value={'음란물'} />
+          <input type="radio" name="report" value={'음란물'} onChange={onChange} />
           음란물
         </label>
-        <div>
-          <button type="button">취소</button>
-          <button type="submit">신고하기</button>
+        <div className={`${styles['report-btn-wrap']}`}>
+          <button className={`${styles['report-btn']} ${styles['cancle']}`} type="button">취소</button>
+          <button className={`${styles['report-btn']} ${styles['success']} ${reportFormData.report.length > 0 ? 'active' : ''}`} type="submit">신고하기</button>
         </div>
       </form>
     </div>
