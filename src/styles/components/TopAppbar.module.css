@@ -14,6 +14,91 @@
   align-items: center;
 }
 
+.report-wrap {
+  position: relative;
+
+}
 .report-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 393px;
+  height: 100vh;
+  background-color: rgba(33, 33, 36, 0.32);
+  transform: translateX(-50%);
+  z-index: 2;
   display: none;
 }
+.report-menu.active {
+  display: block;
+}
+.report-menu-inner {
+  position: absolute;
+  right: 16px;
+  top: 23px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.back-btn {
+  cursor: pointer;
+}
+
+
+/*ReportModal CSS : S*/
+.report-modal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 393px;
+  height: 100vh;
+  transform: translateX(-50%);
+  background-color: rgba(33, 33, 36, 0.32);
+  z-index: 2;
+}
+.report-modal-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 244px;
+  height: 329px;
+  padding: 32px 24px;
+  color: #212124;
+  background-color: rgba(242, 243, 246, 1);
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+  
+
+}
+.report-modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-modal-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.report-modal-form-info {
+  margin-bottom: 9px;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+
+.report-modal-form-label {
+  font-size: 13px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/*ReportModal CSS : E*/

@@ -34,12 +34,13 @@
 .modal-back {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 393px;
   height: 100%;
   background: rgba(33, 33, 36, 0.459);
   z-index: 9;
   display: none;
+  transform: translateX(-50%);
 }
 
 .modal-list {

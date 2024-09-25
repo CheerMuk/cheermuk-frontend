@@ -3,7 +3,7 @@
 
 import "../styles/font/SUIT.css";
 import '../styles/global.css';
-
+import 'swiper/css';
 import { Metadata } from "next"
 
 
