@@ -9,6 +9,11 @@ function goback() {
 
 export default function TopAppbar() {
   const [reportReady, setReportReady] = useState<boolean>(false)
+  const [reportFormModal, setreportFormModal] = useState<boolean>(false);
+
+  const closeFormModal = () => {
+    setreportFormModal(false);
+  }
 
   return (
     <div className={`${styles['container']}`}>
@@ -36,6 +41,9 @@ export default function TopAppbar() {
 
               if (target.dataset.name !== '신고') {
                 setReportReady(false);
+              }else {
+                setReportReady(false);
+                setreportFormModal(true);
               }
             }}
           >
@@ -47,17 +55,19 @@ export default function TopAppbar() {
           </div>
         </div>
       </div>
-      <ReportModal isShow={true} />
+      <ReportModal isShow={reportFormModal} setShow={closeFormModal} />
     </div>
   );
 }
 
 interface reportFormType {
-  report : string
+  report : string,
+  
 }
 
-function ReportModal({ isShow }: {
-  isShow: boolean
+function ReportModal({ isShow, setShow }: {
+  isShow: boolean,
+  setShow : () => void
 }) {
 
   const [reportFormData, setReportFormData] = useState<reportFormType>({
@@ -111,8 +121,21 @@ function ReportModal({ isShow }: {
           음란물
         </label>
         <div className={`${styles['report-btn-wrap']}`}>
-          <button className={`${styles['report-btn']} ${styles['cancle']}`} type="button">취소</button>
-          <button className={`${styles['report-btn']} ${styles['success']} ${reportFormData.report.length > 0 ? 'active' : ''}`} type="submit">신고하기</button>
+          <button 
+            className={`${styles['report-btn']} ${styles['cancle']}`} 
+            type="button"
+            onClick={() => {
+              setShow();
+            }}
+          >취소</button>
+          <button 
+            disabled={reportFormData.report.length > 0 ? false : true} 
+            className={`${styles['report-btn']} ${styles['success']} ${reportFormData.report.length > 0 ? styles['active'] : ''}`} 
+            type="submit"
+            onClick={() => {
+              setShow();
+            }}
+          >신고하기</button>
         </div>
       </form>
     </div>
